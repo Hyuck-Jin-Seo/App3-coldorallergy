@@ -149,7 +149,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <div class="page" id="results">                    <!--Created my results page -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Click Button Below to Display Results>      
+		<h1>Click Button Below to Display Results</h1>       
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -159,12 +159,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <div class="page" id="displayResults">                    <!--Created my display results page -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Results!>      
+		<h1>Results!</h1>       
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p id="results"></p>           <!--used JavaScript to display percentage results -->
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+		document.getElementById("results").innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+
 	</div>
 </div>	
 	
