@@ -40,7 +40,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         var cold_count = 0;
 	var allergyPercent = 0;  <!-- declared and initiated variable -->
 	var coldPercent = 0;     <!-- declared and initiated variable -->
-	var resultText = document.getElementById("results1");    <!-- declared and initiated variable -->
+	
         function allergyAdd(){
             allergy_count = allergy_count + 1;
 		alert("allergy count is " + allergy_count); <!-- Changed alert text to show what the count indicated because it was confusing having the alert display a number without showing what the number meant-->
@@ -54,7 +54,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function calcResults(){          <!-- created function to calculate result percentages  -->
             (allergyPercent = allergy_count / (allergy_count + cold_count)) * 100;      
-	    (coldPercent = cold_count / (allergy_count + cold_count)) * 100;      
+	    (coldPercent = cold_count / (allergy_count + cold_count)) * 100;  
+	     var resultText = document.getElementById("results1");    <!-- declared and initiated variable -->
         }
 
   </script>
