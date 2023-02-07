@@ -97,8 +97,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p>    <!--This is where I asked my first question -->
-		<a href="#two" class="w3-btn w3-black"> Yes </a>  <!--This is where I created the yes button for question one -->
-		<a href="#two" class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question one -->
+		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> Yes </a>  <!--This is where I created the yes button for question one + I triggered a JavaScript event to increase variable of allergy count when yes button is clicked -->
+		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question one + I triggered a JavaScript event to increase variable of cold count when no button is clicked-->
     	</div>
 </div>
 
