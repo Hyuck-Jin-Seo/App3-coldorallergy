@@ -38,8 +38,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
-
-
+	var allergyPercent = 0;  <!-- declared and initiated variable -->
+	var coldPercent = 0;     <!-- declared and initiated variable -->
+	var resultText = document.getElementById("results");    <!-- declared and initiated variable -->
         function allergyAdd(){
             allergy_count = allergy_count + 1;
 		alert("allergy count is " + allergy_count); <!-- Changed alert text to show what the count indicated because it was confusing having the alert display a number without showing what the number meant-->
@@ -49,6 +50,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
 		alert("cold count is " + cold_count); <!-- Changed alert text to show what the count indicated -->
+        }
+	
+	function calcResults(){          <!-- created function to calculate result percentages  -->
+            (allergyPercent = allergy_count / (allergy_count + cold_count)) * 100;      
+	    (coldPercent = cold_count / (allergy_count + cold_count)) * 100;      
         }
 
   </script>
@@ -134,10 +140,36 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>    <!--This is where I asked my fourth question -->
-		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> Yes </a>  <!--This is where I created the yes button for question four + I triggered a JavaScript event to increase variable of allergy count when yes button is clicked -->
-		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question four + I triggered a JavaScript event to increase variable of cold count when no button is clicked-->
+		<a href="#results" onclick="allergyAdd();"class="w3-btn w3-black"> Yes </a>  <!--This is where I created the yes button for question four + I triggered a JavaScript event to increase variable of allergy count when yes button is clicked -->
+		<a href="#results" onclick="coldAdd();"class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question four + I triggered a JavaScript event to increase variable of cold count when no button is clicked-->
     	</div>
 </div>	
+
+	
+	
+<div class="page" id="results">                    <!--Created my results page -->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Click Button Below to Display Results>      
+	</div>
+	
+	<div id="content" class="w3-container">
+		<a href="#displayResults" onclick="calcResults();"class="w3-btn w3-black"> Calculate Results </a>  <!--This is where I created the calculate results button that will calculate the final percentages and go to page that displays results -->
+    	</div>
+</div>	
+	
+<div class="page" id="displayResults">                    <!--Created my display results page -->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Results!>      
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p id="results"></p>           <!--used JavaScript to display percentage results -->
+		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+	</div>
+</div>	
+	
+	
+	
 	
 	
 	
