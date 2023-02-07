@@ -56,7 +56,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;      
 	    coldPercent = (cold_count / (allergy_count + cold_count)) * 100;
 	    var resultText = document.getElementById("displayResults");    <!-- declared and initiated variable -->
-            resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+            
         }
 
 	
@@ -166,7 +166,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p id="results"></p>
 		<a href="#displayResults" onclick="calcResults();"class="w3-btn w3-black"> Calculate Results </a>  <!--This is where I created the calculate results button that will calculate the final percentages & store results in varible and go to page that displays results -->
-	
+	        resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
+		
+		
+		
+		
     	</div>
 </div>
 
