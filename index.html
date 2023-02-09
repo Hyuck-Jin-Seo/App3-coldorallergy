@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Hyuck-Jin Seo   <!-- added my name to authors -->
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+Learn about buttons, multiple pages, variables, functions, and comments while creating a diagnostic web-based app.
  
 Known Issues:
-blah, blah, blah, blah
+No issues with code or app. However, app should not be used to diagnose any medicial condition.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -36,37 +36,28 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
-	var allergyPercent = 0;  <!-- declared and initiated variable -->
-	var coldPercent = 0;     <!-- declared and initiated variable -->
+        var allergy_count = 0;      //variable that counts allergy answers
+        var cold_count = 0;         //variable that counts cold answers
+	var allergyPercent = 0;     //variable that stores percentage of allergy 
+	var coldPercent = 0;        //variable that stores percentage of cold 
 	
-        function allergyAdd(){
+        function allergyAdd(){                     //function that increments varible allergy_count when allergy button is clicked
             allergy_count = allergy_count + 1;
-		alert("allergy count is " + allergy_count); <!-- Changed alert text to show what the count indicated because it was confusing having the alert display a number without showing what the number meant-->
+		alert("allergy count is " + allergy_count); //Changed alert text to show what the count indicated because it was confusing having the alert display a number without showing what the number meant//
 
         }
 
-        function coldAdd(){
+        function coldAdd(){                       //function that increments varible cold_count when cold button is clicked
             cold_count = cold_count + 1;
-		alert("cold count is " + cold_count); <!-- Changed alert text to show what the count indicated -->
+		alert("cold count is " + cold_count); //Changed alert text to show what the count indicated
         }
 	
-	function calcResults(){          <!-- created function to calculate result percentages  -->
+	function calcResults(){          //created function to calculate result percentages
             allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;      
 	    coldPercent = (cold_count / (allergy_count + cold_count)) * 100;
-	    var resultText = document.getElementById("resultsPage");    <!-- declared and initiated variable -->
-            resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%";
+	    var resultText = document.getElementById("resultsPage");    // variable that stores resulting text that displays percentages of allergy and cold
+            resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%";       //outputting result
         }
-
-	
-	
-	  
-	  
-            
-		
-		
-	
 
   </script>
 
