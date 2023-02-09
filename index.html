@@ -49,7 +49,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function coldAdd(){                       //function that increments varible cold_count when cold button is clicked
             cold_count = cold_count + 1;
-		alert("cold count is " + cold_count); //Changed alert text to show what the count indicated
+		alert("cold count is " + cold_count);      //Changed alert text to show what the count indicated
         }
 	
 	function calcResults(){          //created function to calculate result percentages
@@ -99,7 +99,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
-<div class="page" id="one">
+<div class="page" id="one">               <!--Created page 1 -->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
 	</div>
@@ -111,7 +111,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 </div>
 
-<div class="page" id="two">
+<div class="page" id="two">           <!--Created page 2 -->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
@@ -151,12 +151,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <div class="page" id="resultsPage">                    <!--Created my results page -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Results</h1>       
+		<h1>Results</h1>                <!--Changed header to indicate results page -->
 	</div>
 	
 	<div id="content" class="w3-container">
 
-		<a onclick="calcResults();"class="w3-btn w3-black"> Results </a>  <!--This is where I created the calculate results button that will calculate the final percentages & store results in varible and go to page that displays results -->
+		<a onclick="calcResults();"class="w3-btn w3-black"> Results </a>  <!--This is where I created the calculate results button that will calculate the final percentages & store results in varibles and go to page that displays results -->
 	        <p id="results"></p>
 		
 		
