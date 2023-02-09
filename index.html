@@ -147,11 +147,39 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>    <!--This is where I asked my fourth question -->
-		<a href="#resultsPage" onclick="allergyAdd();"class="w3-btn w3-black"> Yes </a>  <!--This is where I created the yes button for question four + I triggered a JavaScript event to increase variable of allergy count when yes button is clicked -->
-		<a href="#resultsPage" onclick="coldAdd();"class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question four + I triggered a JavaScript event to increase variable of cold count when no button is clicked-->
+		<a href="#five" onclick="allergyAdd();"class="w3-btn w3-black"> Yes </a>  <!--This is where I created the yes button for question four + I triggered a JavaScript event to increase variable of allergy count when yes button is clicked -->
+		<a href="#five" onclick="coldAdd();"class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question four + I triggered a JavaScript event to increase variable of cold count when no button is clicked-->
     	</div>
 </div>	
 
+
+	
+<div class="page" id="five">                    <!--Created my fifth page -->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1>          <!--Changed header to show change in question number -->
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Do you have muscle pain?</p>    <!--This is where I asked my fifth question -->
+		<a href="#six" onclick="coldAdd();"class="w3-btn w3-black"> Yes </a>  <!--This is where I created the yes button for question three + I triggered a JavaScript event to increase variable of cold count when yes button is clicked -->
+		<a href="#six" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question three + I triggered a JavaScript event to increase variable of allergy count when no button is clicked-->    	
+	</div>
+</div>	
+	
+
+	
+<div class="page" id="six">                    <!--Created my sixth page -->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 6</h1>          <!--Changed header to show change in question number -->
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Do you have dark circles under the eyes?</p>    <!--This is where I asked my sixth question -->
+		<a href="#resultsPage" onclick="allergyAdd();"class="w3-btn w3-black"> Yes </a>  <!--This is where I created the yes button for question four + I triggered a JavaScript event to increase variable of allergy count when yes button is clicked -->
+		<a href="#resultsPage" onclick="coldAdd();"class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question four + I triggered a JavaScript event to increase variable of cold count when no button is clicked-->
+    	</div>
+</div>
+	
 	
 	
 <div class="page" id="resultsPage">                    <!--Created my results page -->
