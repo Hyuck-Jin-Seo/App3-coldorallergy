@@ -43,13 +43,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
         function allergyAdd(){                     //function that increments varible allergy_count when allergy button is clicked
             allergy_count = allergy_count + 1;
-		alert("allergy count is " + allergy_count); //Changed alert text to show what the count indicated because it was confusing having the alert display a number without showing what the number meant//
+		alert("Allergy count is: " + allergy_count); //Changed alert text to show what the count indicated because it was confusing having the alert display a number without showing what the number meant//
 
         }
 
         function coldAdd(){                       //function that increments varible cold_count when cold button is clicked
             cold_count = cold_count + 1;
-		alert("cold count is " + cold_count);      //Changed alert text to show what the count indicated
+		alert("Cold count is: " + cold_count);      //Changed alert text to show what the count indicated
         }
 	
 	function calcResults(){          //created function to calculate result percentages
@@ -90,6 +90,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<h1>Cold or Allergies?</h1>
 </div>
 	
+	
 <div id="content" class="w3-container">
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
 	
@@ -99,6 +100,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
+	
 <div class="page" id="one">               <!--Created page 1 -->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
@@ -111,6 +113,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 </div>
 
+	
 <div class="page" id="two">           <!--Created page 2 -->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -123,6 +126,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>	
 
+	
 <div class="page" id="three">                    <!--Created my third page -->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>           <!--Changed header to show change in question number -->
@@ -134,6 +138,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a href="#four" onclick="allergyAdd();"class="w3-btn w3-black"> No </a>  <!--This is where I created the no button for question three + I triggered a JavaScript event to increase variable of allergy count when no button is clicked-->
 	</div>
 </div>	
+	
 	
 <div class="page" id="four">                    <!--Created my fourth page -->
 	<div class="w3-container w3-flat-carrot">
@@ -158,17 +163,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 		<a onclick="calcResults();"class="w3-btn w3-black"> Results </a>  <!--This is where I created the calculate results button that will calculate the final percentages & store results in percentage varibles-->
 	        <p id="displayresults"></p>    <!--I fixed the problem where my results would display on a new page without header. I fixed this problem by displaying results on the same page. The error was caused by naming my paragraph id the same as some variables -->
-		
-		
-		
-		
     	</div>
 </div>
-
-	
-
-	
-	
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
