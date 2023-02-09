@@ -55,8 +55,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function calcResults(){          //created function to calculate result percentages
             allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;      
 	    coldPercent = (cold_count / (allergy_count + cold_count)) * 100;
-	    var resultText = document.getElementById("displayresults");    // variable that stores resulting text that displays percentages of allergy and cold
-            resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%";     //outputting result code
+	    var resultText = document.getElementById("displayresults");    // variable captures content of paragraph in results page
+            resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is a cold = " + coldPercent + "%";     //outputting actual results by changing resultText from paragraph content to actual results I want displayed
 	}
 
   </script>
@@ -157,7 +157,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 
 		<a onclick="calcResults();"class="w3-btn w3-black"> Results </a>  <!--This is where I created the calculate results button that will calculate the final percentages & store results in percentage varibles-->
-	        <p id="displayresults"></p>.    <!--I fixed the problem where my results would display on a new page without header. I fixed this problem by displaying results on the same page. The error was caused by naming my paragraph id the same as some variables -->
+	        <p id="displayresults"></p>    <!--I fixed the problem where my results would display on a new page without header. I fixed this problem by displaying results on the same page. The error was caused by naming my paragraph id the same as some variables -->
 		
 		
 		
